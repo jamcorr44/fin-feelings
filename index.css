@@ -1,0 +1,66 @@
+/* index.css */
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+  	margin:0;
+  	padding:0;
+  	background: #FAFAFA;
+}
+
+#title {
+	width: 100%;
+	height: 10%;
+}
+
+#title h1 {
+	text-align: center;
+	font-size: 3vmax;
+	letter-spacing: 3vw;
+	opacity: .7;
+}
+
+.ball {
+  	position: absolute;
+  	border-radius: 100%;
+  	opacity: 0.3;
+  	z-index: -1;
+}
+
+#profiles {
+	width: 80vw;
+	max-height: 70vh;
+	margin: auto;
+	margin-top: 10vh;
+	text-align: center;
+	overflow: scroll;
+}
+
+.bubble {
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 50px;
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px green;
+    z-index: 5;
+}
+
+.bubble:hover {
+	cursor: pointer;
+	opacity: .5;
+}
+
+#bottom {
+	width: 100%;
+	height: 25px;
+	background: black;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
