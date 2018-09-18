@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Emotion Editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="swatch book, css3, jquery, animated, rotation, transition, folding fan" />
+        <meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		
+
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+			<header>
+				<h1><span>How are you feeling?</span></h1>
+				
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+			
+				<div id="sb-container" class="sb-container">
+					<div>
+						<h3><span>Other</span></h3>
+					</div>
+					<div>
+						<h3><span>Angry</span></h3>
+					</div>
+					<div>
+						<h3><span>Friendly</span></h3>
+					</div>
+					<div>
+						<h3><span>Surprised</span></h3>
+					</div>	
+					<div>
+						<h3><span>Happy</span></h3>
+					</div>
+					<div>
+						<h3><span>Sad</span></h3>											
+					</div>
+					<div>
+						<h3><span>Inspired</span></h3>											
+					</div>
+					<div>
+						<h3><span></span></h3>
+						<span class="sb-toggle">Click to open/close</span>
+						<h5><span>Emotions</span></h5>											
+					</div>
+				</div><!-- sb-container -->
+	
+			</section>
+			<section class="main">
+				<form>
+					  <div class="form-group">
+					    <label for="exampleFormControlTextarea1">Please provide an explanation.</label>
+					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					  </div>
+					  <a class="btn btn-info" href="file:///Users/jamiecorr/Documents/GitHub/fin-feelings/index.html" role="button">Done</a>
+				</form>
+			</section>
+
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook( {
+					// number of degrees that is between each item
+					angleInc : -10,
+					// amount in degrees for the opened item's next sibling
+					proximity : -45,
+					neighbor : -4,
+					// index of the element that when clicked, triggers the open/close function
+					// by default there is no such element
+					closeIdx : 11
+				} );
+			
+			});
+		</script>
+
+    </body>
+</html>
