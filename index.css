@@ -1,4 +1,8 @@
 /* index.css */
+
+
+
+/* ----- Overall Section ----- */
 html {
 	height:100%;
 }
@@ -10,9 +14,16 @@ body {
   	background: #FAFAFA;
 }
 
+#main {
+	height: 100%;
+}
+
+
+/* ----- Header Section----- */
 #title {
 	width: 100%;
 	height: 10%;
+	padding-top: 2%;
 }
 
 #title h1 {
@@ -22,6 +33,9 @@ body {
 	opacity: .7;
 }
 
+
+
+/* ----- Background Balls Section ----- */
 .ball {
   	position: absolute;
   	border-radius: 100%;
@@ -29,27 +43,39 @@ body {
   	z-index: -1;
 }
 
-#profiles {
-	width: 80vw;
-	max-height: 70vh;
-	margin: auto;
-	margin-top: 10vh;
-	text-align: center;
-	overflow: scroll;
+
+
+/* ----- ScrollBar Section ----- */
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
 }
 
-.bubble {
-	border-radius: 50%;
-	background-position: center;
-	background-size: cover;
-	width: 200px;
-	height: 200px;
+
+
+/* ----- ScrollBar Section ----- */
+#profiles {
+	width: 90vw;
+	max-height: 75%;
+	margin: auto;
+	margin-top: 2.5%;
+	margin-bottom: 0;
+	text-align: center;
+	overflow: scroll;
+	overflow-x: hidden;
+	background: #FAFAFA;
+}
+
+.profile {
 	display: inline-block;
-	margin: 50px;
-	box-shadow: 0 0 0 3px white, 
-                0 0 0 6px white, 
-                0 0 0 14px green;
-    z-index: 5;
+	margin: 40px;
+}
+
+.profile span {
+	display: block;
+	margin-top: 25px;
+	font-family: Montserrat;
+	font-size: 16px;
+	letter-spacing: 1px;
 }
 
 .bubble:hover {
@@ -57,10 +83,67 @@ body {
 	opacity: .5;
 }
 
-#bottom {
+.bubble {
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	z-index: 5
+}
+
+.bubble-inspired {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #9b59b6;
+}
+
+.bubble-sad {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #3498db;
+}
+
+.bubble-happy {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #27ae60;
+}
+
+.bubble-surprised {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #f1c40f;
+}
+
+.bubble-friendly {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #e67e22;
+}
+
+.bubble-angry {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #e74c3c;
+}
+
+.bubble-other {
+	box-shadow: 0 0 0 3px white, 
+                0 0 0 6px white, 
+                0 0 0 14px #7f8c8d;
+}
+
+
+
+/* ----- Footer Section----- */
+#footer {
 	width: 100%;
-	height: 25px;
-	background: black;
-	margin-top: 50px;
-	margin-bottom: 0;
+	height: 10px;
+	background: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 0;
 }
