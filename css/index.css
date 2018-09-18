@@ -23,14 +23,14 @@ body {
 #title {
 	width: 100%;
 	height: 10%;
-	padding-top: 2%;
 }
 
 #title h1 {
 	text-align: center;
-	font-size: 3vmax;
-	letter-spacing: 3vw;
+	font-size: 2vmax;
+	letter-spacing: 1vw;
 	opacity: .7;
+	padding-top: 20px;
 }
 
 
@@ -55,14 +55,13 @@ body {
 /* ----- ScrollBar Section ----- */
 #profiles {
 	width: 90vw;
-	max-height: 75%;
+	max-height: 80%;
 	margin: auto;
-	margin-top: 2.5%;
 	margin-bottom: 0;
 	text-align: center;
 	overflow: scroll;
 	overflow-x: hidden;
-	background: #FAFAFA;
+	background: none;
 }
 
 .profile {
@@ -72,7 +71,7 @@ body {
 
 .profile span {
 	display: block;
-	margin-top: 25px;
+	margin-top: 15%;
 	font-family: Montserrat;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -88,9 +87,8 @@ body {
 	background-position: center;
 	background-size: cover;
 	display: inline-block;
-	width: 200px;
-	height: 200px;
-	z-index: 5
+	width: 215px;
+	height: 215px;
 }
 
 .bubble-inspired {
