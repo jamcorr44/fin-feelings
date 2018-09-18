@@ -23,15 +23,26 @@ body {
 #title {
 	width: 100%;
 	height: 10%;
+	display; table;
 }
 
-#title h1 {
+#heading {
+	display: table-cell;
+}
+
+#heading h1 {
+	margin-left: 50px;
 	text-align: center;
 	font-family: 'Montserrat';
 	font-size: 2vmax;
 	letter-spacing: 1vw;
 	opacity: .7;
-	padding-top: 20px;
+}
+
+#edit {
+	display: table-cell;
+	float: right;
+	padding-top: 17.5px;
 }
 
 
@@ -155,7 +166,6 @@ body {
 
 /* ----- Pop Button Section----- */
 /* ----- CSS Code by Ian Lunn----- */
-/* Grow */
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
