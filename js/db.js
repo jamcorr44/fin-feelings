@@ -19,3 +19,8 @@ var people = [person1, person2, person3, person4, person5, person6, person7, per
 var emotions = [emotion1, emotion2, emotion3, emotion4, emotion5, emotion6];
 
 
+for(var i =1; i<= 20; i++){
+	console.log(i);
+  	$('#profiles').append('<div class="profile"><a href=profile.html><button class="bubble bubble-happy hvr-grow" id="b' + i + '" style="background-image: url(images/avatar.jpeg)"></button><span>Name</span></div>');
+}
+
