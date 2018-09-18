@@ -27,6 +27,7 @@ body {
 
 #title h1 {
 	text-align: center;
+	font-family: 'Montserrat';
 	font-size: 2vmax;
 	letter-spacing: 1vw;
 	opacity: .7;
@@ -79,7 +80,11 @@ body {
 
 .bubble:hover {
 	cursor: pointer;
-	opacity: .5;
+	opacity: 0.9;
+}
+
+.bubble:focus {
+	outline:0;
 }
 
 .bubble {
@@ -144,4 +149,24 @@ body {
 	left: 0;
 	bottom: 0;
 	padding: 0;
+}
+
+
+
+/* ----- Pop Button Section----- */
+/* ----- CSS Code by Ian Lunn----- */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
