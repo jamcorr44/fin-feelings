@@ -23,12 +23,9 @@ function getInfo(person) {
 
 (function () {
 	var person = persons.find(getInfo);
-	console.log(person);
 	document.getElementById("image").src = person.image;
 	document.getElementById("name").innerHTML = person.name;
 	document.getElementById("location").innerHTML = person.location;
 	document.getElementById("description").innerHTML = person.description;
 	document.getElementsByClassName("sonar-wave")[0].style.backgroundColor = emotions[person.emotion];
-	console.log(document.getElementsByClassName("sonar-wave")[0].style.backgroundColor);
-
 })();
