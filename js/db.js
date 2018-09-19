@@ -1,5 +1,5 @@
 var person1 = {pid: 0, name: "Jamie Corr", location: "Los Angeles", emotion: "happy", description: "", timeStamp: "2019-09-21T12:57:27+00:00", image: "images/girl0.jpeg"};
-var person2 = {pid: 1, name: "Paul Pham", location: "Los Angeles", emotion: "surprised", description: "", timeStamp: "2019-09-20T11:57:27+00:00", image: "images/p1.jpeg"};
+var person2 = {pid: 1, name: "Paul Pham", location: "Los Angeles", emotion: "angry", description: "Chipotle prices were higher.", timeStamp: "2019-09-20T11:57:27+00:00", image: "images/p1.jpeg"};
 var person3 = {pid: 2, name: "Brynna Conway", location: "Chicago", emotion: "sad", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p3.jpeg"};
 var person4 = {pid: 3, name: "Christian Galang", location: "Houston", emotion: "angry", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p2.jpeg"};
 var person5 = {pid: 4, name: "Emma Fass", location: "DC", emotion: "other", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "http://kb4images.com/images/picture-girl/38191181-picture-girl.jpg"};
@@ -17,8 +17,6 @@ var person16 = {pid: 15, name: "Mitch Hussey", location: "New York", emotion: "h
 var person17 = {pid: 16, name: "Rachel Hale", location: "Seattle", emotion: "happy", description: "", timeStamp: "2017-09-19T11:57:27+00:00", image: "images/girl1.jpg"};
 var person18 = {pid: 17, name: "Tyler Wessels", location: "Chicago", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/boy1.jpeg"};
 var person19 = {pid: 18, name: "Maryam Hedayati", location: "New York", emotion: "happy", description: "", timeStamp: "2018-09-19T11:57:27+00:00", image: "images/girl2.jpeg"};
-
-
 
 
 var people = {person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15, person16, person17, person18, person19};
