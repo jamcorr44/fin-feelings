@@ -111,43 +111,43 @@ body {
 .bubble-inspired {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #9b59b6;
+                0 0 0 14px #764394;
 }
 
 .bubble-sad {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #3498db;
+                0 0 0 14px #3277b5;
 }
 
 .bubble-happy {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #27ae60;
+                0 0 0 14px #87b11d;
 }
 
 .bubble-surprised {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #f1c40f;
+                0 0 0 14px #ffcf14;
 }
 
 .bubble-friendly {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #e67e22;
+                0 0 0 14px #f16729;
 }
 
 .bubble-angry {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #e74c3c;
+                0 0 0 14px #ea2a29;
 }
 
 .bubble-other {
 	box-shadow: 0 0 0 3px white, 
                 0 0 0 6px white, 
-                0 0 0 14px #7f8c8d;
+                0 0 0 14px #b0b2b7;
 }
 
 

@@ -1,26 +1,28 @@
-var person1 = {pid: 0, name: "Jamie Corr", location: "Los Angeles", description: "", image: "http://kb4images.com/images/picture-girl/38191181-picture-girl.jpg"};
-var person2 = {pid: 1, name: "Paul Pham", location: "Los Angeles", description: "", image: "images/p1.jpeg"};
-var person3 = {pid: 2, name: "Ava Biel", location: "San Francisco", description: "", image: "images/p2.jpeg"};
-var person4 = {pid: 3, name: "Emma Tseng", location: "Atlanta", description: "", image: "images/p3.jpeg"};
-var person5 = {pid: 4, name: "Ollie Auburn", location: "Seattle", description: "", image: "images/p4.jpeg"};
-var person6 = {pid: 5, name: "Max Wells", location: "Seattle", description: "", image: "images/p5.jpeg"};
-var person7 = {pid: 6, name: "Zoey Highland", location: "Boston", description: "", image: "images/p6.jpeg"};
-var person8 = {pid: 7, name: "KK Hernadez", location: "New York", description: "", image: "images/p7.jpeg"};
+var person1 = {pid: 0, name: "Jamie Corr", location: "Los Angeles", emotion: "happy", description: "", timeStamp: "2019-09-21T12:57:27+00:00", image: "http://kb4images.com/images/picture-girl/38191181-picture-girl.jpg"};
+var person2 = {pid: 1, name: "Paul Pham", location: "Los Angeles", emotion: "surprised", description: "", timeStamp: "2019-09-20T11:57:27+00:00", image: "images/p1.jpeg"};
+var person3 = {pid: 2, name: "Brynna Conway", location: "Chicago", emotion: "sad", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p2.jpeg"};
+var person4 = {pid: 3, name: "Christian Galang", location: "Houston", emotion: "angry", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p3.jpeg"};
+var person5 = {pid: 4, name: "Emma Fass", location: "DC", emotion: "other", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p4.jpeg"};
+var person6 = {pid: 5, name: "Jewell Finder", location: "Houston", emotion: "friendly", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p5.jpeg"};
+var person7 = {pid: 6, name: "Katie Schermerhorn", location: "Chicago", emotion: "inspired", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p6.jpeg"};
+var person8 = {pid: 7, name: "Kendra Anderson", location: "Dallas", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person9 = {pid: 8, name: "Madison Wheeler", location: "New York", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person10 = {pid: 9, name: "Marc Oelkers", location: "New York", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person11 = {pid: 10, name: "Ryan Ding", location: "Dallas", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person12 = {pid: 11, name: "Sarah Drumm", location: "Chicago", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person13 = {pid: 12, name: "Trevor Dixon", location: "Dallas", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person14 = {pid: 13, name: "Alex Deany", location: "San Francisco", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person15 = {pid: 14, name: "Joey Schutz", location: "San Francisco", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person16 = {pid: 15, name: "Mitch Hussey", location: "New York", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person17 = {pid: 16, name: "Rachel Hale", location: "Seattle", emotion: "happy", description: "", timeStamp: "2017-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person18 = {pid: 17, name: "Tyler Wessels", location: "Chicago", emotion: "happy", description: "", timeStamp: "2019-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
+var person19 = {pid: 18, name: "Maryam Hedayati", location: "New York", emotion: "happy", description: "", timeStamp: "2018-09-19T11:57:27+00:00", image: "images/p7.jpeg"};
 
-var emotion1 = {id: 0, type: "inspired", color: "purple", rgb: "#764394"};
-var emotion2 = {id: 1, type: "sad", color: "blue", rgb: "#3277b5"};
-var emotion3 = {id: 2, type: "happy", color: "green", rgb: "#87b11d"};
-var emotion4 = {id: 3, type: "surprised", color: "yellow", rgb: "#ffcf14"};
-var emotion5 = {id: 4, type: "friendly", color: "orange", rgb: "#f16729"};
-var emotion6 = {id: 5, type: "angry", color: "red", rgb: "#ea2a29"};
-var emotion6 = {id: 6, type: "other", color: "grey", rgb: "#b0b2b7"};
-
-var people = [person1, person2, person3, person4, person5, person6, person7, person8];
-var emotions = [emotion1, emotion2, emotion3, emotion4, emotion5, emotion6];
 
 
-for(var i =1; i<= 20; i++){
-	console.log(i);
-  	$('#profiles').append('<div class="profile"><a href=profile.html><button class="bubble bubble-happy hvr-grow" id="b' + i + '" style="background-image: url(images/avatar.jpeg)"></button><span>Name</span></div>');
-}
 
+var people = {person1, person2, person3, person4, person5, person6, person7, person8, person9, person10, person11, person12, person13, person14, person15, person16, person17, person18, person19};
+
+(function () {
+	localStorage.saveData = JSON.stringify(people);
+})();
