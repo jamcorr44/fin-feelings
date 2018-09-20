@@ -6,8 +6,9 @@
 
 // Global Variables
 var persons = Object.values(JSON.parse(localStorage.saveData || null) || {});
+var pid= localStorage.pid;
 var emotion;
-var pid= parseInt(JSON.parse(localStorage.pid || null) || {});
+console.log(pid);
 
 // Functions
 function setEmotion(id) {
@@ -18,7 +19,7 @@ function update() {
 	var description = document.getElementById("exampleFormControlTextarea1").value;
 	if (emotion !== undefined) {
 		var timeStamp = new Date();
-		
+
 		persons[pid].emotion=emotion;
 		persons[pid].description=description;
 		persons[pid].timeStamp=timeStamp;

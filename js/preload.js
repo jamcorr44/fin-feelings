@@ -23,7 +23,7 @@ function checkLogin() {
 
 	} else {
 		localStorage.setItem('user', JSON.stringify(person.name));
-		localStorage.setItem('pid', JSON.stringify(person.pid));
+		localStorage.setItem('pid', person.pid);
 		return true;
 	}
 }
