@@ -4,6 +4,7 @@
 
 // Global Variables
 var persons = Object.values(JSON.parse(localStorage.saveData || null) || {});
+console.log(persons);
 var emotions = {inspired: "#764394", sad: "#3277b5", happy: "#87b11d", surprised: "#ffcf14", friendly: "#f16729", angry: "#ea2a29", other: "#b0b2b7"};
 
 

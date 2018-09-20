@@ -1,0 +1,137 @@
+/* preload.css */
+
+
+
+/* ----- Overall Section ----- */
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+  	margin:0;
+  	padding:0;
+  	background: #FAFAFA;
+}
+
+#main {
+	height: 100%;
+	margin: 10px;
+}
+
+
+/* ----- Header Section----- */
+#title {
+	width: 100%;
+	height: 10%;
+	display; table;
+}
+
+#heading {
+	display: table-cell;
+}
+
+#heading h1 {
+	margin-left: 50px;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 2vmax;
+	letter-spacing: 1vw;
+	opacity: .7;
+}
+
+#edit {
+	display: table-cell;
+	float: right;
+	padding-top: 17.5px;
+}
+
+
+
+/* ----- Background Balls Section ----- */
+.ball {
+  	position: absolute;
+  	border-radius: 100%;
+  	opacity: 0.3;
+  	z-index: -1;
+}
+
+
+/* ----- Login Section ----- */
+#profiles {
+	margin-top: 7.5%;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 20px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    width: 50%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+    background: none;
+    letter-spacing: 4px;
+}
+
+input:focus {
+	border-bottom: 1px solid #89C4F4;
+}
+
+input::placeholder {
+	letter-spacing: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+       display: block;
+       float: none;
+    }
+}
+</style

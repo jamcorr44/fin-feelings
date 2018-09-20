@@ -37,25 +37,25 @@
 			<section class="main">
 			
 				<div id="sb-container" class="sb-container">
-					<div>
+					<div id="other" onClick="setEmotion(this.id);">
 						<h3><span>Other</span></h3>
 					</div>
-					<div>
+					<div id="angry" onClick="setEmotion(this.id);">
 						<h3><span>Angry</span></h3>
 					</div>
-					<div>
+					<div id="friendly" onClick="setEmotion(this.id);">
 						<h3><span>Friendly</span></h3>
 					</div>
-					<div>
+					<div id="surprised" onClick="setEmotion(this.id);">
 						<h3><span>Surprised</span></h3>
 					</div>	
-					<div>
+					<div id="happy" onClick="setEmotion(this.id);">
 						<h3><span>Happy</span></h3>
 					</div>
-					<div>
+					<div id="sad" onClick="setEmotion(this.id);">
 						<h3><span>Sad</span></h3>											
 					</div>
-					<div>
+					<div id="inspired" onClick="setEmotion(this.id);">
 						<h3><span>Inspired</span></h3>											
 					</div>
 					<div>
@@ -67,17 +67,18 @@
 	
 			</section>
 			<section class="main">
-				<form>
+				<form onsubmit="return update()" action="index.html">
 					  <div class="form-group">
 					    <label for="exampleFormControlTextarea1">Please provide an explanation.</label>
-					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					    <textarea required="required" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					  </div>
 					   <a class="btn btn-secondary" href="index.html" role="button">Cancel</a>
-					   <a class="btn btn-info" href="index.html" role="button">Done</a>
+					   <input class="btn btn-info" type="submit" value="Done">
 				</form>
 			</section>
 
         </div>
+        <script type="text/javascript" src="js/swatchnobs.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
 		<script type="text/javascript">
